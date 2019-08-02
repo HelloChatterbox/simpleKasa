@@ -9,7 +9,11 @@ LOG = logging.getLogger("simpleKasa")
 
 def hsv_to_name(h, s, v):
     rgb = hsv_to_rgb(h, s, v)
-    return rgb_to_name(rgb)
+    try:
+        return rgb_to_name(rgb)
+    except ValueError: # color has no official name
+        # TODO find closest named color
+        return "unknown color name"
 
 
 def name_to_hsv(name):

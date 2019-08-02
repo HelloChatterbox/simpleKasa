@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='simpleKasa',
-    version='0.1.1',
+    version='0.1.2',
     packages=['simpleKasa'],
     url='https://github.com/jarbasal/simpleKasa',
     install_requires=["pyHS100", 'webcolors'],
