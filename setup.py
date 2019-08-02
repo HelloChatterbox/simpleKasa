@@ -3,9 +3,9 @@ from setuptools import setup
 setup(
     name='simpleKasa',
     version='0.1.1',
-    packages=['simpleKasa', 'webcolors'],
-    url='',
-    install_requires=["pyHS100"],
+    packages=['simpleKasa'],
+    url='https://github.com/jarbasal/simpleKasa',
+    install_requires=["pyHS100", 'webcolors'],
     license='MIT',
     author='jarbasai',
     author_email='jarbasai@mailfence.com',
